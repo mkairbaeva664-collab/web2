@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #A230A4;
+    padding: 20px;
+}
+
+.navig {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+a {
+    color: #290087;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F2E0A4; /*mouse over link*/
+    text-decoration: underline;
+}
+
+.logo {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #290087;
+    font-size: xx-large;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1 fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.grid_header {
+    grid-area: header;
+    background-color: #290087;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f3e685;
+    padding: 20px;
+}
+
+.grid_main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #290087;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.gallery_box {
+    padding: 40px;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo {
+    position: relative;
+    border-radius: 10px;
+}
+
+.photo img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.photo:hover img {
+    transform: scale(1.15);
+}
+
+.portfolio_main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 30px;
+    padding: 30px;
+    background-color: #451952;
+}
+
+.portfolio_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1D1A39;
+    color: #E8BCB9;
+}
+
+.portfolio_logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.portfolio_nav {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio_nav a {
+    color: #E8BCB9;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.portfolio_nav a:hover {
+    color: #F39F5A;
+    text-decoration: underline;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project_card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #E8BCB9;
+    color: #1D1A39;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project_card:hover {
+    transform: scale(1.05);
+}
+
+.project_card button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #AE445A;
+    color: white;
+    cursor: pointer;
+}
+
+.project_card button:hover {
+    background-color: #F39F5A;
+    color: #1D1A39;
+}
+
+.portfolio_sidebar {
+    padding: 20px;
+    background-color: #662549;
+    color: #E8BCB9;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.portfolio_footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1D1A39;
+    color: #E8BCB9;
+    font-family: 'Courier New', Courier, monospace;
+}
